@@ -1,0 +1,35 @@
+@import "./variables";
+
+.text {
+  background-image: url("./media/space.jpg");
+  background-position: center;
+  color: transparent;
+  font-size: 5rem;
+  -webkit-background-clip: text;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.8s;
+}
+
+.text-effect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: red;
+  transition: all 1s;
+  transform: scale(1.5);
+  border-radius: 50%;
+}
+
+.text-effect:hover::before {
+  transform: scale(0);
+}
+
+.text-effect:hover {
+  transform: skewY(-10deg);
+  letter-spacing: 1.5rem;
+}

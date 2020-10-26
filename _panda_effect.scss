@@ -1,0 +1,13 @@
+.red-panda-effect {
+  margin: 4rem;
+  height: 20rem;
+  transition: all 0.3s;
+  border-radius: 50%;
+  filter: blur(1.8px);
+}
+
+.red-panda-effect:hover {
+  filter: none;
+  border-radius: 1.5rem;
+  transform: scale(1.3);
+}
