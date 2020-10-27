@@ -132,6 +132,93 @@ body {
   letter-spacing: 1.5rem;
 }
 
+.twitch-img-container {
+  width: 60vw;
+  height: 60vh;
+  position: relative;
+}
+
+.emote {
+  position: absolute;
+  -webkit-box-shadow: 0 1.5rem 1rem black;
+          box-shadow: 0 1.5rem 1rem black;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  height: 15rem;
+  outline-offset: 1rem;
+}
+
+.emote:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-box-shadow: 0 3rem 1rem blue;
+          box-shadow: 0 3rem 1rem blue;
+  outline: 1rem solid orange;
+  z-index: 2;
+}
+
+.twitch-img-container:hover .emote:not(:hover) {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0.3;
+}
+
+.twitch-img-1 {
+  top: 8%;
+  right: 15%;
+}
+
+.twitch-img-2 {
+  top: 15%;
+  right: 35%;
+}
+
+.twitch-img-3 {
+  top: 50%;
+}
+
+.twitch-img-4 {
+  top: 47%;
+  left: 20%;
+}
+
+.anime-container {
+  height: 60vh;
+  position: relative;
+}
+
+.anime-img {
+  height: 100%;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.anime-title {
+  font-size: 3rem;
+  opacity: 0;
+  color: white;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.anime-container:hover .anime-img {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+}
+
+.anime-container:hover .anime-title {
+  opacity: 1;
+  top: 50%;
+}
+
 .container {
   width: 80vh;
   margin: 2rem auto;
