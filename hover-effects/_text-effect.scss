@@ -1,6 +1,7 @@
 @import "./variables";
 
 .text {
+  margin: 30% auto;
   background-image: url("./media/space.jpg");
   background-position: center;
   color: transparent;
@@ -12,14 +13,9 @@
 }
 
 .text-effect::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  @include pseudo-ele-before-setup();
   z-index: 1;
-  background-color: red;
+  background-color: $text-effect-backround;
   transition: all 1s;
   transform: scale(1.5);
   border-radius: 50%;

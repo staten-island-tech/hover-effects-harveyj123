@@ -1,31 +1,36 @@
+@import "./variables";
+
 .anime-container {
+  margin: 20% auto;
   height: 60vh;
+  width: 100%;
   position: relative;
+  border: 2px solid $black;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .anime-img {
   height: 100%;
-  clip-path: circle();
   transition: all 0.3s;
 }
 
 .anime-title {
-  font-size: 3rem;
-  opacity: 0;
-  color: white;
+  font-size: 4rem;
+  opacity: 1;
+  color: $red;
   position: absolute;
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.3s;
-  text-transform: uppercase;
-}
-
-.anime-container:hover .anime-img {
-  filter: grayscale(80%);
 }
 
 .anime-container:hover .anime-title {
-  opacity: 1;
   top: 50%;
+  opacity: 1;
+}
+
+.anime-container:hover .anime-img {
+  filter: blur(0.3rem);
 }

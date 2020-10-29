@@ -2,31 +2,24 @@
 
 .btn {
   text-decoration: none;
-  margin: 0.8rem;
+  margin: 30% auto;
   padding: 1.3rem;
-  background-color: #e3e3e3;
   font-size: 1.5rem;
   border-radius: 2rem;
   position: relative;
   overflow: hidden;
-  border: 2px solid lightblue;
-  box-shadow: 0 13px 0.5rem black;
+  border: 2px solid $dark-blue;
+  box-shadow: 0 13px 0.5rem $black;
   color: black;
 }
 
 .simple-button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  @include pseudo-ele-before-setup();
   z-index: -1;
-  background-color: #e3e3e3;
+  background-color: $btn-backround;
   border-radius: 50%;
   transform: scale(2);
-  /*scaling it out of the box but with hidden overflow you dont see it */
-  transition: all 1s;
+  transition: all 0.8s;
 }
 
 .simple-button:hover::before {
@@ -35,11 +28,7 @@
 
 .simple-button {
   z-index: 1;
-  background-color: #0af;
-}
-
-.simple-button:hover {
-  color: white;
+  background-color: $btn-hover-backround;
 }
 
 .btn:active {

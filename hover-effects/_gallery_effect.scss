@@ -1,0 +1,33 @@
+@import "./variables";
+
+.twitch-img-container {
+  height: 70vh;
+}
+
+.twitch-img-gallery {
+  width: 35rem;
+  height: 35rem;
+  border: 2px solid $black;
+}
+
+.emote {
+  box-shadow: 0 1.5rem 1rem $black;
+  transition: all 0.3s;
+  height: 15rem;
+  outline-offset: 0.5rem;
+  margin: 1rem;
+}
+
+.emote:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 2rem $box-shadow-gallery;
+  outline: 0.5rem solid $black;
+  z-index: 1;
+}
+
+.twitch-img-container:hover .emote:not(:hover) {
+  transform: scale(0.8);
+  opacity: 0.3;
+}
+
+// ::only-of-type
