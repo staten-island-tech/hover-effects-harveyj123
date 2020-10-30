@@ -12,7 +12,7 @@ body {
 }
 
 .anime-container {
-  margin: 20% auto;
+  margin: 5rem auto;
   height: 60vh;
   width: 60vw;
   position: relative;
@@ -158,7 +158,7 @@ body {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   outline-offset: 0.5rem;
-  margin: 0.5rem;
+  margin: 2.5rem;
 }
 
 .emote:hover {
