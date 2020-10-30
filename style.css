@@ -46,8 +46,8 @@ body {
 }
 
 .finial-hover:hover .anime-img {
-  -webkit-filter: blur(0.3rem);
-          filter: blur(0.3rem);
+  -webkit-filter: grayscale(90%);
+          filter: grayscale(90%);
 }
 
 html,
