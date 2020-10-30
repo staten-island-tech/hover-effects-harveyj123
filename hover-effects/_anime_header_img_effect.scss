@@ -1,7 +1,11 @@
 @import "./variables";
 
+.finial-hover {
+  clip-path: circle();
+}
+
 .anime-container {
-  margin: 5rem auto;
+  margin: 20% auto;
   height: 60vh;
   width: 60vw;
   position: relative;
@@ -9,14 +13,14 @@
 
 .anime-img {
   clip-path: circle();
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   transition: all 0.3s;
 }
 
 .anime-title {
   opacity: 0;
-  font-size: 3.2rem;
+  font-size: 3.6rem;
   color: $red;
   position: absolute;
   top: 100%;
@@ -25,11 +29,11 @@
   transition: all 0.3s;
 }
 
-.anime-container:hover .anime-title {
+.finial-hover:hover .anime-title {
   opacity: 1;
   top: 50%;
 }
 
-.anime-container:hover .anime-img {
+.finial-hover:hover .anime-img {
   filter: blur(0.3rem);
 }

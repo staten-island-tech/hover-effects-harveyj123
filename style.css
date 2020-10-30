@@ -6,8 +6,13 @@ body {
           box-sizing: border-box;
 }
 
+.finial-hover {
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
 .anime-container {
-  margin: 5rem auto;
+  margin: 20% auto;
   height: 60vh;
   width: 60vw;
   position: relative;
@@ -16,7 +21,7 @@ body {
 .anime-img {
   -webkit-clip-path: circle();
           clip-path: circle();
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -24,7 +29,7 @@ body {
 
 .anime-title {
   opacity: 0;
-  font-size: 3.2rem;
+  font-size: 3.6rem;
   color: #ff5722;
   position: absolute;
   top: 100%;
@@ -35,12 +40,12 @@ body {
   transition: all 0.3s;
 }
 
-.anime-container:hover .anime-title {
+.finial-hover:hover .anime-title {
   opacity: 1;
   top: 50%;
 }
 
-.anime-container:hover .anime-img {
+.finial-hover:hover .anime-img {
   -webkit-filter: blur(0.3rem);
           filter: blur(0.3rem);
 }
