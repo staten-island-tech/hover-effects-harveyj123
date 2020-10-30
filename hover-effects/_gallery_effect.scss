@@ -2,7 +2,6 @@
 
 .twitch-img-container {
   @include flexbox-to-center();
-  @include border();
   margin: 5rem auto;
   width: 80vw;
   height: 70vh;
