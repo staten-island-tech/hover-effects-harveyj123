@@ -14,10 +14,21 @@ body {
   width: 100%;
 }
 
+@mixin flexbox-to-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin border {
+  border: 2px solid $dark-blue;
+}
+
 $red: #ff5722;
 $white: #fff;
 $dark-blue: #455a64;
 $black: #000;
+$dark-amber: #ffa000;
 $btn-backround: #ffecb3;
 $btn-hover-backround: #b2ebf2;
 $text-effect-backround: #ffc107;

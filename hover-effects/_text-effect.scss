@@ -1,7 +1,7 @@
 @import "./variables";
 
 .text {
-  margin: 30% auto;
+  margin: 5rem auto;
   background-image: url("./media/space.jpg");
   background-position: center;
   color: transparent;
@@ -26,6 +26,6 @@
 }
 
 .text-effect:hover {
-  transform: skewY(-10deg);
+  transform: skewY(-15deg);
   letter-spacing: 1.5rem;
 }

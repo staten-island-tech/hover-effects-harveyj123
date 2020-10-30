@@ -2,15 +2,25 @@
 
 .btn {
   text-decoration: none;
-  margin: 30% auto;
+  margin: 5rem auto;
   padding: 1.3rem;
   font-size: 1.5rem;
   border-radius: 2rem;
   position: relative;
   overflow: hidden;
-  border: 2px solid $dark-blue;
+  @include border();
   box-shadow: 0 13px 0.5rem $black;
-  color: black;
+  color: $black;
+  z-index: 1;
+}
+
+.simple-button {
+  background-color: $btn-hover-backround;
+}
+
+.simple-button:hover {
+  transition: 0.5s ease-in-out;
+  color: $dark-amber;
 }
 
 .simple-button::before {
@@ -26,12 +36,7 @@
   transform: scale(0);
 }
 
-.simple-button {
-  z-index: 1;
-  background-color: $btn-hover-backround;
-}
-
 .btn:active {
-  transition: all 0.8s;
-  transform: scale(1.5);
+  transition: all 0.5s;
+  transform: scale(1.2);
 }
